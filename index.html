@@ -7,19 +7,33 @@
     <title>Reservia</title>
     <link rel="stylesheet" href="style.css">
     <link href="https://fonts.googleapis.com/css2?family=Raleway&display=swap" rel="stylesheet">
+    <script src="https://kit.fontawesome.com/0d6d06c653.js" crossorigin="anonymous"></script>
 </head>
-<body class="container">
-    <header>
-        <img src="./Reservia.svg" alt="Logo Reservia" class="logo">
-        <nav>
-            <a href="#accomodations" class="accomodation active">Hébergement</a>
-            <a href="#activities" class="activities">Activités</a>
-        </nav>
-            <a href="" class="signIn">S'inscrire</a>
-    </header>
-    <main>
+<body>
+    <div class="container">
+        <header>
+            <img src="./Reservia.svg" alt="Logo Reservia" class="logo">
+            <nav>
+                <a href="#accomodations" class="accomodation active">Hébergement</a>
+                <a href="#activities" class="activities">Activités</a>
+            </nav>
+                <a href="" class="signIn">S'inscrire</a>
+        </header>
+        <main>
+            <section class="search" id="search">
+                <h1>Trouvez votre hébergement pour des vacances de rêve</h1>
+                <p>En plein centre ville ou en pleine nature</p>
+                <form action="" method="GET" class="searchForm">
+                    <span class="searchIcon"><i class="fas fa-map-marker-alt"></i></span>
+                    <input class="searchInput" type="text" name="city" id="city" placeholder="Marseille, France">
+                    <button class="searchButton" type="submit">Rechercher</button>
+                </form>
 
-    </main>
+            </section>
+            <section class="accomodations" id="accomodations"></section>
+            <section class="activities" id="activities"></section>
+        </main>
+</div>
     <footer>
         <div class="footerList">
             <h3 class="footerListTitle">À propos</h3>
