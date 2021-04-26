@@ -497,10 +497,13 @@ section h1{
         border:2px solid rgb(242,242,242);
         border-radius: 1rem 1rem 0 0;
         text-align: center;
+        padding: .5rem;
+        font-size: 1rem;
     }
     .searchButton{
         border-radius: 0 0 1rem 1rem;
         border-left: 2px solid rgb(242,242,242);
+        padding: .5rem;;
     }
     .searchIcon{
         display:none;
