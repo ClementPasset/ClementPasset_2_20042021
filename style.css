@@ -499,6 +499,7 @@ section h1{
     }
     .searchButton{
         border-radius: 0 0 1rem 1rem;
+        border-left: 2px solid rgb(242,242,242);
     }
     .searchIcon{
         display:none;
@@ -506,8 +507,16 @@ section h1{
     .searchForm:focus-within .searchInput{
         border-left:2px solid rgb(0,101,252);
         border-right:2px solid rgb(0,101,252);
+    }.search:focus-within .searchButton{
+        border-left: 2px solid rgb(0,101,252)
     }
     .search:focus-within .searchButton:hover{
         border-left:2px solid rgb(2,75,185);
+    }
+    .accomodations-populars{
+        padding: 1rem;
+    }
+    .accomodations-populars-card{
+        width:100%;
     }
 }
