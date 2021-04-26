@@ -246,6 +246,7 @@ section h1{
     cursor: pointer;
     box-shadow: 2px 2px 10px rgb(190, 190, 190);
     transition: transform .1s;
+    max-height: fit-content;
 }
 .accomodations-populars-card:nth-child(3){
     grid-area: first-card;
@@ -394,7 +395,7 @@ section h1{
     }
     .accomodations{
         grid-template-columns:1fr;
-        grid-template-rows:1fr 2fr;
+        grid-template-rows:auto auto;
         grid-template-areas: 
         "popular"
         "list";
@@ -450,9 +451,13 @@ section h1{
         width: 80%;
         margin: 0 auto;
     }
+    .accomodations-card{
+        height: fit-content;
+    }
     .accomodations-list{
         grid-template-columns: 1fr 1fr;
         grid-template-rows: .1fr 1fr 1fr 1fr .1fr;
+        height: fit-content;
     }
     .accomodations-populars-card img{
         width:30%;
@@ -498,7 +503,7 @@ section h1{
         border-radius: 1rem 1rem 0 0;
         text-align: center;
         padding: .5rem;
-        font-size: 1rem;
+        font-size: 1git poush rem;
     }
     .searchButton{
         border-radius: 0 0 1rem 1rem;
