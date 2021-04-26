@@ -28,6 +28,7 @@ header{
 }
 header .logo{
     margin:auto 0;
+    grid-area: logo;
 }
 header nav{
     grid-area:nav;
@@ -465,5 +466,48 @@ section h1{
 }
 
 @media screen and (max-width: 768px){
-    
+    .container{
+        width:100%;
+    }
+    .container>*{
+        padding:0 1rem;
+    }
+    header{
+        padding:0!important;
+        height:auto;
+        grid-template-rows: 1fr 1fr;
+        grid-template-columns: 1fr 1fr 1fr 1fr;
+        grid-template-areas:
+        "logo logo signIn signIn"
+        "nav nav nav nav";
+    }
+    header .logo{
+        margin: auto;
+    }header nav a.active, header nav a:hover{
+        border-bottom: 3px solid rgb(0,101,252);
+        border-top: 3px solid transparent;
+    }
+    .searchForm{
+        flex-direction: column;
+        width:80%;
+        margin: 2rem auto;
+    }
+    .searchInput{
+        border:2px solid rgb(242,242,242);
+        border-radius: 1rem 1rem 0 0;
+        text-align: center;
+    }
+    .searchButton{
+        border-radius: 0 0 1rem 1rem;
+    }
+    .searchIcon{
+        display:none;
+    }
+    .searchForm:focus-within .searchInput{
+        border-left:2px solid rgb(0,101,252);
+        border-right:2px solid rgb(0,101,252);
+    }
+    .search:focus-within .searchButton:hover{
+        border-left:2px solid rgb(2,75,185);
+    }
 }
