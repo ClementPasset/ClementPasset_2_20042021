@@ -490,6 +490,7 @@ section h1{
     .searchForm{
         flex-direction: column;
         width:80%;
+        height: fit-content;
         margin: 2rem auto;
     }
     .searchInput{
