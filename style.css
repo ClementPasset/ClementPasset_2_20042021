@@ -553,6 +553,17 @@ section h1{
     .search:focus-within .searchButton:hover{
         border-left:2px solid rgb(2,75,185);
     }
+
+    .filters{
+        justify-content: flex-start;
+    }
+    .filters h2.filter{
+        width: 100%;
+    }
+    .filter{
+        margin: .5rem .3rem;
+    }
+
     .accomodations-populars{
         padding: 1rem;
         grid-template-columns: 1fr;
