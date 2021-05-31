@@ -23,7 +23,7 @@ header{
     grid-template-columns: 1.5fr 6fr 3fr 1.5fr;
     grid-template-areas:"logo . nav signIn" ;
     letter-spacing: 1px;
-    color:rgb(0,101,252);
+    color:#0065fc;
     font-weight: bold;
 }
 header .logo{
@@ -49,15 +49,15 @@ header .signIn{
     margin:auto;
 }
 header nav a.active, header nav a:hover{
-    border-top: 3px solid rgb(0,101,252);
-    color: rgb(0,101,252);
+    border-top: 3px solid #0065fc;
+    color: #0065fc;
 }
 
 /* FOOTER */
 .footer{
     padding:2rem;
     height:25%;
-    background-color: rgb(242,242,242);
+    background-color: #f2f2f2;
     display: flex;
     justify-content: space-evenly;
     align-items: flex-start;
@@ -90,13 +90,16 @@ section h1{
 }
 
 /* SEARCH SECTION */
+.search p{
+    font-size: 1.3rem;
+}
 .searchForm{
     margin:2rem 0;
     height:50px;
     display: flex;
 }
 .searchIcon{
-    background-color: rgb(242,242,242);
+    background-color: #f2f2f2;
     border-radius: 1rem 0 0 1rem;
     height: 100%;
     width:50px;
@@ -110,7 +113,7 @@ section h1{
     height: 100%;
     border:none;
     padding: 1rem;
-    border:2px solid rgb(242,242,242);
+    border:2px solid #f2f2f2;
     border-right: none;
     border-left: none;
     font-size: 1.5rem;
@@ -118,7 +121,7 @@ section h1{
 .searchButton{
     height: 100%;
     border-radius: 0 1rem 1rem 0;
-    border:2px solid rgb(242,242,242);
+    border:2px solid #f2f2f2;
     border-left: none;
     background-color: rgb(0,101,252);
     color: white;
@@ -130,22 +133,22 @@ section h1{
     outline: none;
 }
 .search:focus-within .searchButton:hover{
-    background-color: rgb(2, 75, 185);
-    border:2px solid rgb(2,75,185);
+    background-color: #024bb9;
+    border:2px solid #024bb9;
     border-left: none;
 }
 .searchForm:focus-within .searchIcon{
-    border: 2px solid rgb(0,101,252);
+    border: 2px solid #0065fc;
     border-right: none;
 }
 .searchForm:focus-within .searchInput{
     outline: none;
-    border:2px solid rgb(0,101,252);
+    border:2px solid #0065fc;
     border-right: none;
     border-left: none;
 }
 .searchForm:focus-within .searchButton{
-    border:2px solid rgb(0,101,252);
+    border:2px solid #0065fc;
     border-left: none;
 }
 .filters{
@@ -159,7 +162,7 @@ section h1{
     text-align: center;
     margin: 1rem 2rem 0 0;
     padding:0 1rem 0 0;
-    border: 2px solid rgb(224, 237, 255);
+    border: 2px solid #f2f2f2;
     border-radius: 2rem;
     display: flex;
 }
@@ -169,13 +172,13 @@ section h1{
 .filterIcon{
     width: 3rem;
     height: 3rem;
-    background-color:rgb(224, 237, 255);
+    background-color:#deebff;
     border-radius: 50%;
     margin-right: 1rem;
     color: rgb(0,101,252);
 }
 .filter:hover:nth-child(n+2){
-    background-color: rgb(224, 237, 255);
+    background-color: #deebff;
     cursor: pointer;
 }
 .filter:hover:nth-child(n+2) .filterIcon{
@@ -190,11 +193,11 @@ section h1{
     display: flex;
     justify-content: center;
     align-items: center;
-    border: 1px solid rgb(242,242,242);
+    border: 1px solid #f2f2f2;
     border-radius: 50%;
     width: 2rem;
     height: 2rem;
-    color:rgb(0,101,252);
+    color:#0065fc;
     margin-right: 1rem;
 }
 
@@ -207,7 +210,7 @@ section h1{
 }
 .accomodations-list{
     grid-area: list;
-    background-color: rgb(242,242,242);
+    background-color: #f2f2f2;
     border-radius: 2rem;
     padding:1rem 2rem 1rem 2rem;
     display: grid;
@@ -225,7 +228,7 @@ section h1{
 }
 .accomodations-populars{
     grid-area: popular;
-    background-color: rgb(242,242,242);
+    background-color: #f2f2f2;
     border-radius: 2rem;
     padding:1.5rem 2rem;
     position: relative;
@@ -263,16 +266,16 @@ section h1{
 }
 .accomodations-card img{
     width:100%;
-    max-height: 125px;
+    max-height: 150px;
     border-radius: 2rem 2rem 0 0;
     margin-bottom: 1rem;
     object-fit: cover;
 }
 .accomodations-list-showMore{
     grid-row: -2/-1;
-    grid-column: 1/-1;
+    grid-column: 0/1;
     font-weight: bold;
-    margin:auto;
+    margin:auto auto auto 0;
 }
 .card-title, .card-price, .card-rating{
     padding:0 1rem;
@@ -499,11 +502,11 @@ section h1{
         margin: 2rem auto;
     }
     .searchInput{
-        border:2px solid rgb(242,242,242);
+        border:2px solid #f2f2f2;
         border-radius: 1rem 1rem 0 0;
         text-align: center;
         padding: .5rem;
-        font-size: 1git poush rem;
+        font-size: 1rem;
     }
     .searchButton{
         border-radius: 0 0 1rem 1rem;
