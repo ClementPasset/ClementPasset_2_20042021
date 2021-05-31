@@ -151,6 +151,9 @@ section h1{
     border:2px solid #0065fc;
     border-left: none;
 }
+.searchLogo{
+    display: none;
+}
 .filters{
     display: flex;
     flex-wrap: wrap;
@@ -506,33 +509,50 @@ section h1{
         font-size: 1rem;
     }
     .searchForm{
-        height: fit-content;
+        border:2px solid #f2f2f2;
+        justify-content: space-between;
+        border-radius: .8rem;
     }
     .searchInput{
-        border:2px solid #f2f2f2;
-        border-radius: 1rem 1rem 0 0;
+        border:unset;
+        width: 100%;
         text-align: center;
         padding: .5rem;
         font-size: 1rem;
     }
     .searchButton{
-        border-radius: 0 0 1rem 1rem;
-        border-left: 2px solid rgb(242,242,242);
-        padding: .5rem;;
+        border-radius: .7rem;
+        width: 50px;
+        height: 50px;
+        border: 2px solid #0065fc;
+        display: flex;
+        justify-content: center;
+        align-items: center;
     }
     .searchIcon{
-        display:none;
+        height: auto;
+        border-radius: .7rem 0 0 .7rem;
+    }
+    .searchText{
+        display: none;
+    }
+    .searchLogo{
+        display: unset;
+        font-size: 1.2rem;
     }
     .searchForm:focus-within .searchInput{
-        border-left:2px solid rgb(0,101,252);
-        border-right:2px solid rgb(0,101,252);
-    }.search:focus-within .searchButton{
-        border-left: 2px solid rgb(0,101,252)
+        border:none;
+    }
+    .searchForm:focus-within .searchButton{
+        border:2px solid #0065fc;
+    }
+    .searchForm:focus-within .searchIcon{
+        border:2px solid transparent;
+        border-right: none;
     }
     .search:focus-within .searchButton:hover{
         border-left:2px solid rgb(2,75,185);
     }
-
     .accomodations-populars{
         padding: 1rem;
         grid-template-columns: 1fr;
