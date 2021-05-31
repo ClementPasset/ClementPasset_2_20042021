@@ -499,11 +499,14 @@ section h1{
     header nav a{
         border-bottom: 3px solid #f2f2f2;;
     }
+    .search h1{
+        font-size: 1.5rem;
+    }
+    .search p{
+        font-size: 1rem;
+    }
     .searchForm{
-        flex-direction: column;
-        width:80%;
         height: fit-content;
-        margin: 2rem auto;
     }
     .searchInput{
         border:2px solid #f2f2f2;
@@ -529,6 +532,7 @@ section h1{
     .search:focus-within .searchButton:hover{
         border-left:2px solid rgb(2,75,185);
     }
+
     .accomodations-populars{
         padding: 1rem;
         grid-template-columns: 1fr;
