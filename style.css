@@ -491,9 +491,13 @@ section h1{
     }
     header .logo{
         margin: auto;
-    }header nav a.active, header nav a:hover{
+    }
+    header nav a.active, header nav a:hover{
         border-bottom: 3px solid rgb(0,101,252);
         border-top: 3px solid transparent;
+    }
+    header nav a{
+        border-bottom: 3px solid #f2f2f2;;
     }
     .searchForm{
         flex-direction: column;
