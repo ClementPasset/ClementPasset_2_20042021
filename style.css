@@ -151,7 +151,7 @@ section h1{
     border:2px solid #0065fc;
     border-left: none;
 }
-.searchLogo{
+.searchLogo::before{
     display: none;
 }
 .filters{
@@ -536,7 +536,7 @@ section h1{
     .searchText{
         display: none;
     }
-    .searchLogo{
+    .searchLogo::before{
         display: unset;
         font-size: 1.2rem;
     }
