@@ -189,7 +189,6 @@ section h1{
 }
 .info{
     display: flex;
-    vertical-align: middle;
     line-height: 2rem;
 }
 .info-icon{
@@ -276,7 +275,7 @@ section h1{
 }
 .accomodations-list-showMore{
     grid-row: -2/-1;
-    grid-column: 0/1;
+    grid-column: 1 / 2;
     font-weight: bold;
     margin:auto auto auto 0;
 }
