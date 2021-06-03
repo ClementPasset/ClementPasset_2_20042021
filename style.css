@@ -386,7 +386,7 @@ section h1{
     grid-area: f;
 }
 
-@media screen and (max-width: 1300px){
+@media screen and (max-width: 1500px){
     header{
         height:80px;
         grid-template-columns: 1.5fr 2fr 3fr 1.5fr;
@@ -433,7 +433,7 @@ section h1{
     }
 }
 
-@media screen and (max-width: 992px){
+@media screen and (max-width: 1122px){
     .activities{
         grid-template-columns: 1fr 1fr;
         grid-template-rows: 1fr 3fr 3fr 3fr;
